@@ -18,26 +18,26 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common SkylineUI stuff.
+# Inherit some common Void UI stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-WITH_GAPPS := 1
-TARGET_EXCLUDES_AUDIOFX := true
 
-# Rom Specific Flags
-TARGET_INCLUDE_WIFI_EXT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Void internal properties
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
+IS_PHONE := true
+TARGET_HAS_UDFPS := true
+TARGET_ENABLE_BLUR := true
 TARGET_EXCLUDES_AUDIOFX := true
-
-# SkylineUI Maintainer Flags
-SKYLINEUI_MAINTAINER := Arsalan-Zeus
-CUSTOM_BUILD_TYPE := OFFICIAL
+TARGET_FACE_UNLOCK_SUPPORTED := true
+VOID_MAINTAINER := Arsalan-Zeus
+CUSTOM_BUILD_TYPE := UNOFFICIAL
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
+
+# Set Boot Animination Resolution
+TARGET_BOOT_ANIMATION_RES := 1080
 
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
