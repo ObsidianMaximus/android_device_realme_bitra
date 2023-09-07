@@ -16,7 +16,7 @@
 
 #define LOG_TAG "fastcharge@1.0-service.xiaomi"
 
-#define RESTRICTED_CURRENT_PATH "/sys/class/qcom-battery/restricted_current"
+#define RESTRICTED_CURRENT_PATH "/sys/class/qcom-battery/restrict_cur"
 
 #define MAX_SUPPORTED_CURRENT 3000 /*mA*/
 
