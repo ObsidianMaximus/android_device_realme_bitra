@@ -21,8 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit some common SkylineUI stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-WITH_GAPPS := 1
-TARGET_EXCLUDES_AUDIOFX := true
+#WITH_GAPPS := 1
 
 # Rom Specific Flags
 TARGET_INCLUDE_WIFI_EXT := true
@@ -31,6 +30,9 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
 TARGET_SUPPORTS_QUICK_TAP  := true
 TARGET_EXCLUDES_AUDIOFX := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
 # SkylineUI Maintainer Flags
 SKYLINEUI_MAINTAINER := Arsalan-Zeus
