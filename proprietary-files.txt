@@ -147,20 +147,11 @@ vendor/lib64/camera.device@3.4-impl.so
 vendor/lib64/camera.device@3.5-external-impl.so
 vendor/lib64/camera.device@3.5-impl.so
 vendor/lib64/camera.device@3.6-external-impl.so
-<<<<<<< HEAD
-=======
-odm/lib64/libSonyIMX471RmscLibrary.so
-vendor/lib64/libbitmlengine.so
->>>>>>> eb15a81 (bitra: Remove non-existent blobs)
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2svarnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libhdrdynamic.so
 vendor/lib64/libhdrdynamicootf.so
-<<<<<<< HEAD
-=======
-odm/lib64/libhwconfigurationutil.so
->>>>>>> eb15a81 (bitra: Remove non-existent blobs)
 vendor/lib64/libipebpsstriping.so
 vendor/lib64/libsns_device_mode_stub.so
 vendor/lib64/libsns_fastRPC_util.so
