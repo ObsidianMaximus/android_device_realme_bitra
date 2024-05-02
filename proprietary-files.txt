@@ -68,10 +68,12 @@ odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
 odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
 odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
 odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
 
 # Charger firmware
 odm/firmware/fastchg/136730/oplus_vooc_fw_rk826.bin
