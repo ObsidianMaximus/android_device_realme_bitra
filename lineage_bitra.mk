@@ -57,6 +57,9 @@ EXTRA_UDFPS_ANIMATIONS := true
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Fossify voice recorder
+TARGET_INCLUDE_VOICERECORDER := true
+
 # Inherit from device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
