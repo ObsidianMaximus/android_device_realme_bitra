@@ -18,38 +18,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common bliss stuff.
+# Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Opiss Cam
-TARGET_USES_OPLUS_CAMERA := true
-
-# Valid for core/full GAPPS (default=true)
-TARGET_USE_GOOGLE_TELEPHONY := false
-
-# GAPPS
-WITH_GAPPS := true
-TARGET_INCLUDE_GOOGLE_APP := false
-TARGET_INCLUDE_GOOGLE_CALCULATOR := true
-TARGET_INCLUDE_GOOGLE_CALENDAR := true
-TARGET_INCLUDE_GOOGLE_CHROME := true
-TARGET_INCLUDE_GOOGLE_DESKCLOCK := false
-TARGET_INCLUDE_GOOGLE_DRIVE := false
-TARGET_INCLUDE_GMAIL := true
-TARGET_INCLUDE_GOOGLE_MAPS := false
-TARGET_INCLUDE_GOOGLE_PHOTOS := true
-TARGET_INCLUDE_GOOGLE_SETUP := true
-TARGET_INCLUDE_PIXEL_FRAMEWORK := false
 
 # Alpha internal properties
 TARGET_HAS_UDFPS := true
 TARGET_ENABLE_BLUR := true
-TARGET_INCLUDE_MATLOG := true
+TARGET_INCLUDE_MATLOG := false
 TARGET_DEFAULT_ADB_ENABLED := true
 TARGET_EXCLUDES_AUDIOFX := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 ALPHA_MAINTAINER := Arsalan-Zeus
 ALPHA_BUILD_TYPE := Official
+
+# GAPPS
+WITH_GMS := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_CALL_RECORDING := true
+TARGET_INCLUDE_PIXEL_LAUNCHER := false
+TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
