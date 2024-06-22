@@ -21,7 +21,7 @@ $(call inherit-product, device/realme/sm8250-common/common.mk)
 $(call inherit-product, vendor/realme/bitra/bitra-vendor.mk)
 
 # API
-BOARD_API_LEVEL := 30
+# BOARD_API_LEVEL := 30
 BOARD_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 PRODUCT_SHIPPING_API_LEVEL := $(BOARD_API_LEVEL)
 
