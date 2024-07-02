@@ -31,14 +31,27 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 ALPHA_MAINTAINER := Arsalan-Zeus
 ALPHA_BUILD_TYPE := Official
 
-# GAPPS
-WITH_GMS := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
+# TARGET_BUILD_PACKAGE options:
+# 1 - vanilla (default)
+# 2 - microg
+# 3 - gapps
+TARGET_BUILD_PACKAGE := 3
+
+# TARGET_LAUNCHER options:
+# 1 - stock (default)
+# 2 - lawnchair
+# 3 - pixel (valid only on gapps builds)
+TARGET_LAUNCHER := 1
+
+# GAPPS (valid only for GAPPS builds)
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_PIXEL_LAUNCHER := false
-TARGET_INCLUDE_STOCK_ARCORE := true
+TARGET_INCLUDE_STOCK_ARCORE := false
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
+# TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
+# Debugging
+TARGET_INCLUDE_MATLOG := false
 
 # Enable extra UDFPS animations
 EXTRA_UDFPS_ANIMATIONS := true
