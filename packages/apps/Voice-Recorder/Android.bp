@@ -2,6 +2,7 @@ android_app_import {
     name: "VoiceRecorder",
     apk: "VoiceRecorder.apk",
     presigned: true,
+    preprocessed: true,
     product_specific: true,
     dex_preopt: {
         enabled: false,
