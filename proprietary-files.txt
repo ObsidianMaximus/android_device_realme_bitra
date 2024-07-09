@@ -67,12 +67,12 @@ odm/lib64/camera/com.qti.sensor.s5kgw1.so
 odm/lib64/camera/com.qti.sensormodule.qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.sensormodule.shine_ov02b.bin
 odm/lib64/camera/com.qti.sensormodule.truly_hi846.bin
-odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.sensormodule.truly_imx471_2169A.bin|0961e23b234fcad57a74e1adfde5af27eb978adc
 odm/lib64/camera/com.qti.sensormodule.truly_imx471.bin
 odm/lib64/camera/com.qti.tuned.sm8250_qtech_s5kgw1.bin
 odm/lib64/camera/com.qti.tuned.sm8250_shine_ov02b.bin
 odm/lib64/camera/com.qti.tuned.sm8250_truly_hi846.bin
-odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin
+odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471_2169A.bin|8d8cbd9bcf9801f059dbe49e08ede866c5f5ba61
 odm/lib64/camera/com.qti.tuned.sm8250_truly_imx471.bin
 vendor/lib64/android.hardware.camera.provider@2.4-legacy.so
 vendor/lib64/camera.device@1.0-impl.so
