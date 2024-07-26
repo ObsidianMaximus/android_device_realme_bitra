@@ -22,8 +22,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, vendor/rising/config/rising.mk)
 
 # Device Identifiers
-RISING_MAINTAINER := Obsidian
-RISING_CHIPSET := Snapdragon 870 5G
+RISING_MAINTAINER := "Obsidian Maximus"
+RISING_CHIPSET := SDM870-5G
 RISING_STORAGE := 128gb
 RISING_RAM := 8gb
 RISING_DEVICE := bitra
