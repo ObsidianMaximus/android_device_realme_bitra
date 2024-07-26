@@ -18,17 +18,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Rising stuff.
-$(call inherit-product, vendor/rising/config/rising.mk)
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Device Identifiers
 RISING_MAINTAINER := "Obsidian Maximus"
 RISING_CHIPSET := SDM870-5G
-RISING_STORAGE := 128gb
-RISING_RAM := 8gb
 RISING_DEVICE := bitra
-RISING_BATTERY := 5000mah
-RISING_DISPLAY := 2400×1080
 
 TARGET_BUILD_APERTURE_CAMERA := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := true
@@ -54,7 +50,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := rising_bitra
+PRODUCT_NAME := lineage_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
