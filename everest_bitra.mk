@@ -18,22 +18,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit some common Matrixx stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
-
-# Matrixx internal properties
-TARGET_HAS_UDFPS := true
-TARGET_ENABLE_BLUR := true
-TARGET_EXCLUDES_AUDIOFX := true
-TARGET_FACE_UNLOCK_SUPPORTED := true
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_SUPPORTS_CALL_RECORDING := true
-TARGET_INCLUDE_STOCK_ARCORE := true
-TARGET_INCLUDE_LIVE_WALLPAPERS := false
-
-# Enable extra UDFPS animations
-EXTRA_UDFPS_ANIMATIONS := true
+# Inherit some common EverestOS stuff.
+$(call inherit-product, vendor/everest/config/common_full_phone.mk)
 
 # Set Boot Animination Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -42,7 +28,7 @@ TARGET_BOOT_ANIMATION_RES := 1080
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_bitra
+PRODUCT_NAME := everest_bitra
 PRODUCT_DEVICE := bitra
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := RMX3370
@@ -50,6 +36,14 @@ PRODUCT_MANUFACTURER := realme
 
 PRODUCT_SYSTEM_NAME := RMX3370
 PRODUCT_SYSTEM_DEVICE := RE879AL1
+
+# Everest Flags
+EVEREST_BUILD_TYPE := UNOFFICIAL
+EVEREST_MAINTAINER := OBSIDIAN
+TARGET_SUPPORTS_BLUR := true
+TARGET_HAS_UDFPS := true
+EXTRA_UDFPS_ANIMATIONS := true
+WITH_GAPPS := false
 
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
