@@ -56,6 +56,8 @@ PRODUCT_GMS_CLIENTID_BASE := android-oppo
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="RMX3370-user 13 TP1A.220905.001 1704335091796 release-keys" \
     BuildFingerprint=realme/RMX3370/RE879AL1:13/TP1A.220905.001/R.159caed-9b84-9b83:user/release-keys \
+    DeviceName=RE879AL1 \
+    DeviceProduct=RMX3370 \
     SystemDevice=RE879AL1 \
     SystemName=RMX3370
 
